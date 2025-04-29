@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunexa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lunexa</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Anime List</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="anime-grid">
+      <div class="anime-card">
+        <img src="images/sample-anime.jpg" alt="Anime" />
+        <h2>Anime Title</h2>
+      </div>
+      <!-- Add more cards -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lunexa</p>
+  </footer>
+</body>
+</html>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.anime-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.anime-card img {
+  width: 100%;
+  border-radius: 10px;
+}
